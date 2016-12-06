@@ -5,7 +5,7 @@ describe("FizzBuzz", function() {
     fizzbuzz = new FizzBuzz();
   });
 
-  it("should be able to print fizz if number is divisible by 3", function() {
+  it("should be test for divisibility by 3", function() {
     expect(fizzbuzz.isDivisibleByThree(3)).toBeTruthy();
   });
 
@@ -27,5 +27,9 @@ describe("FizzBuzz", function() {
 
   it("should not be divisible by fifteen", function(){
     expect(fizzbuzz.isDivisibleByFifteen(4)).toBeFalsy();
+  });
+
+  it("should fizz for three", function(){
+    expect(fizzbuzz.play(3)).toEqual("fizz");
   });
 });
