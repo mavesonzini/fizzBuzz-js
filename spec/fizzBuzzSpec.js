@@ -32,4 +32,8 @@ describe("FizzBuzz", function() {
   it("should fizz for three", function(){
     expect(fizzbuzz.play(3)).toEqual("fizz");
   });
+
+  it("should buzz for five", function(){
+    expect(fizzbuzz.play(5)).toEqual("buzz");
+  });
 });
