@@ -19,5 +19,7 @@ FizzBuzz.prototype.play = function(number){
     return 'fizz';
   } else if (this.isDivisibleByFive(number)){
     return 'buzz';
+  } else {
+    return number;
   }
 }

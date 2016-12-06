@@ -40,4 +40,8 @@ describe("FizzBuzz", function() {
   it("should fizzbuzz for fifteen", function(){
     expect(fizzbuzz.play(15)).toEqual("fizzbuzz");
   });
+
+  it("should return eighty eight for eighty eight", function(){
+    expect(fizzbuzz.play(88)).toEqual(88);
+  });
 });
