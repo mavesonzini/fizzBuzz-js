@@ -8,6 +8,6 @@ FizzBuzz.prototype.isDivisibleByFive = function(number){
   return number % 5 === 0;
 }
 
-FizzBuzz.prototype.isDivisibleByFifteen = function(){
-  return true;
+FizzBuzz.prototype.isDivisibleByFifteen = function(number){
+  return this.isDivisibleByThree(number) && this.isDivisibleByFive(number);
 }
